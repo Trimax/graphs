@@ -44,7 +44,7 @@ public class Application extends SpringBootServletInitializer {
     //TODO: Remove
     @PostConstruct
     public void init() {
-        UserEntity user = userMapper.findByID(1L);
+        UserEntity user = userMapper.get(1L);
         System.out.printf("%d %s%n", user.id, user.eMail);
     }
 }

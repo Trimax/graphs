@@ -7,11 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public final class UserCreateOperation {
+public final class UserGetOperation {
     @Setter(onMethod = @__(@Autowired))
     private UserMapper userMapper;
 
-    public final Long create(final UserEntity entity) {
-        return userMapper.create(entity);
+    public final UserEntity get(final Long id) {
+        return userMapper.get(id);
     }
 }
