@@ -1,7 +1,6 @@
 package com.graphs.entities;
 
-public final class UserEntity {
-    public Long id;
+public final class UserEntity extends AbstractEntity {
     public String eMail;
     public String passwordHash;
 }
