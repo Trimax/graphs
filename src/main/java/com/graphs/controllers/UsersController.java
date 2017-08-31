@@ -10,7 +10,8 @@ import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@RestController(value = Services.USERS)
+@RestController
+@RequestMapping(value = Services.USERS)
 public final class UsersController extends AbstractController {
     @Setter(onMethod = @__(@Autowired))
     private UserCreateOperation userCreateOperation;
